@@ -1,0 +1,27 @@
+# Render Blueprint: statik site olarak yayınlanır (sunucu yok, ücretsiz plan yeterli).
+services:
+  - type: web
+    runtime: static
+    name: ceren-dim
+    buildCommand: npm ci && npm run build
+    staticPublishPath: ./out
+    pullRequestPreviewsEnabled: false
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: NEXT_TELEMETRY_DISABLED
+        value: "1"
+    headers:
+      # hash'li dosyalar hiç değişmez
+      - path: /_next/static/*
+        name: Cache-Control
+        value: public, max-age=31536000, immutable
+      - path: /img/*
+        name: Cache-Control
+        value: public, max-age=2592000
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
