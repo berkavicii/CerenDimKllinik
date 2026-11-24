@@ -1,0 +1,2 @@
+# Plesk Linux (Apache) için: özel 404 sayfası. Windows/IIS'te bu dosya yok sayılır.
+ErrorDocument 404 /404.html
