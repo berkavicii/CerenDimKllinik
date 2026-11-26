@@ -5,7 +5,7 @@ export const site = {
   name: "Ceren Dim",
   title: "Klinik Psikolog Ceren Dim",
   role: "Klinik Psikolog",
-  url: "https://www.cerendim.com",
+  url: "https://klinikpsikologcerendim.com",
   city: "Fethiye / Muğla",
   description:
     "Fethiye'de Klinik Psikolog Ceren Dim ile bireysel danışmanlık, sigara bırakma ve iştah kapatma seansları, anksiyete, panik atak ve ruhsal dengeleme seansları. Online ve yüz yüze.",
