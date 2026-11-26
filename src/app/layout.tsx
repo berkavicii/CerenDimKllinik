@@ -17,8 +17,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "tr_TR",
     siteName: site.title,
-    images: [{ url: "/img/ceren-dim.jpeg", width: 1234, height: 1543, alt: site.title }],
+    images: [{ url: "/img/og.jpg", width: 1200, height: 630, alt: site.title }],
   },
+  twitter: { card: "summary_large_image", images: ["/img/og.jpg"] },
   alternates: { canonical: "/" },
 };
 
