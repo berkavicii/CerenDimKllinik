@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "tr_TR",
     siteName: site.title,
-    images: [{ url: "/img/ceren-dim.jpg", width: 605, height: 807, alt: site.title }],
+    images: [{ url: "/img/ceren-dim.jpeg", width: 1234, height: 1543, alt: site.title }],
   },
   alternates: { canonical: "/" },
 };
@@ -29,7 +29,7 @@ const jsonLd = {
   "@type": "Psychologist",
   name: site.title,
   url: site.url,
-  image: `${site.url}/img/ceren-dim.jpg`,
+  image: `${site.url}/img/ceren-dim.jpeg`,
   telephone: "+905304668487",
   email: site.email,
   address: {

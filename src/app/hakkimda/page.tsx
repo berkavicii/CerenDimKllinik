@@ -23,7 +23,7 @@ export default function AboutPage() {
             <div className="arch absolute inset-0 -translate-x-4 translate-y-4 border border-gold/60" aria-hidden />
             <div className="arch relative aspect-[3/4] overflow-hidden bg-cream-2">
               <Image
-                src="/img/ceren-dim.jpg"
+                src="/img/ceren-dim.jpeg"
                 alt="Klinik Psikolog Ceren Dim"
                 fill
                 sizes="(min-width: 1024px) 24rem, 90vw"
